@@ -6,19 +6,10 @@ public class Main {
         Pizza pizza = nyStore.orderPizza("queijo");
         System.out.println(pizza);
 
-        pizza = chicagoStore.orderPizza("queijo");
-        System.out.println(pizza);
-
-        pizza = nyStore.orderPizza("mariscos");
-        System.out.println(pizza);
-
         pizza = chicagoStore.orderPizza("mariscos");
         System.out.println(pizza);
 
-        pizza = nyStore.orderPizza("vegetariana");
-        System.out.println(pizza);
-
-        pizza = chicagoStore.orderPizza("calabresa");
+        pizza = chicagoStore.orderPizza("vegetariana");
         System.out.println(pizza);
     }
 }

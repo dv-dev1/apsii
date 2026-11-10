@@ -30,31 +30,13 @@ public abstract class Pizza {
     }
 
     public String toString() {
-        String resultado = "---- " + name + " ----\n";
-        if (dough != null) {
-            resultado += dough + "\n";
-        }
-        if (sauce != null) {
-            resultado += sauce + "\n";
-        }
-        if (cheese != null) {
-            resultado += cheese + "\n";
-        }
-        if (veggies != null) {
-            for (int i = 0; i < veggies.length; i++) {
-                resultado += veggies[i];
-                if (i < veggies.length - 1) {
-                    resultado += ", ";
-                }
-            }
-            resultado += "\n";
-        }
-        if (clam != null) {
-            resultado += clam + "\n";
-        }
-        if (pepperoni != null) {
-            resultado += pepperoni + "\n";
-        }
-        return resultado;
+        String texto = "---- " + name + " ----\n";
+        if (dough != null) texto += dough + "\n";
+        if (sauce != null) texto += sauce + "\n";
+        if (cheese != null) texto += cheese + "\n";
+        if (clam != null) texto += clam + "\n";
+        if (pepperoni != null) texto += pepperoni + "\n";
+        if (veggies != null) texto += java.util.Arrays.toString(veggies) + "\n";
+        return texto;
     }
 }
